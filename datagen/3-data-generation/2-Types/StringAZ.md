@@ -2,7 +2,7 @@
 layout: default
 title: String AZ
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -15,21 +15,9 @@ A String with only alphabetical characters (in lower and upper case).
 
 Possible parameters for this type are:
 
-- **length**: number of characters to generate (default is 20).
-- **possible_values**: an array of possible values as string
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Length**: size of the string to generate in terms of character (default to 20)
+- **Possible Values**
+- **Injection**
+- **Compute**
 
-*Note: It is not possible to combine length with possible_values.*
-
-## Examples
-
-A String of 3 alpha-numerical characters:
-
-```json
-    {
-      "name": "abbreviation",
-      "type": "STRINGAZ",
-      "length": 3
-    }
-```
 

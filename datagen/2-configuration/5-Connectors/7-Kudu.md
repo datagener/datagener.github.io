@@ -1,10 +1,10 @@
 ---
 layout: default
-title: HDFS
+title: Kudu
 parent: Connectors
 grand_parent: Configuration
 has_children: false
-nav_order: 1
+nav_order: 8
 ---
 
 # KUDU

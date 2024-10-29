@@ -25,3 +25,11 @@ To authenticate or secure connection to connectors requiring TLS, it is possible
 - **truststore.password**=
 - **keystore.location**=
 - **keystore.password**=
+
+
+# (Optional) Connector Security - Hadoop
+
+To setup Datagen's user and home for Hadoop compoennts:
+
+- **hadoop.user**=datagen
+- **hadoop.home**=/user/datagen

@@ -2,7 +2,7 @@
 layout: default
 title: Country
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -15,18 +15,7 @@ A random country taken from a dictionnary of countries.
 
 Possible parameters for this type are:
 
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
-
-## Examples
-
-A random country:
-
-```json
-    {
-      "name": "country",
-      "type": "COUNTRY"
-    }
-```
+- **Possible Values**
 
 
 ## List of available countries

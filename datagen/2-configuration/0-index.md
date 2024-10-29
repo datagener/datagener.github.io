@@ -10,14 +10,14 @@ permalink: /configuration
 
 To let know Datagen how to connect to the various services where data will be generated, it requires some input configuration.
 
-_Note: By default, Datagen will only be able to generate data to local file system_
+_Note: By default, Datagen will only be able to generate data to local file system, unless models contains information on where to push data or if user provides information during generation of data_
 
 
 ## Application.properties file
 
 All services are configured in one file called **application.properties**.
 
-_Note: This file can be chanegd when launching application by changing the parameter --spring.config.location=file: in launch.sh_
+_Note: This file can be changed when launching application by changing the parameter --spring.config.location=file: in launch.sh_
 
 There is one section foreach type of service where to load data, they can be empty with no risks.
 

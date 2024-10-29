@@ -2,7 +2,7 @@
 layout: default
 title: Incremental Integer
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -17,28 +17,6 @@ _Note: increment step is 1_
 
 Possible parameters for this type are:
 
-- **min**: Starting value for the increment.
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Minimum**: Value to start the increment
 
-
-## Examples
-
-An increment integer:
-
-```json
-    {
-      "name": "increment",
-      "type": "INCREMENT_INTEGER"
-    }
-```
-
-An increment integer starting at 1000:
-
-```json
-    {
-      "name": "increment_at_thousand",
-      "type": "INCREMENT_INTEGER",
-      "min": 1000
-    }
-```
 

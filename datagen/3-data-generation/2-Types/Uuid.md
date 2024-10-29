@@ -2,7 +2,7 @@
 layout: default
 title: UUID
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -11,21 +11,10 @@ nav_order: 1
 
 A UUID in Java format.
 
-## Parameters
+## Example 
 
-Possible parameters for this type are:
+3 outputs:
 
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
-
-
-## Examples
-
-a UUID:
-
-```json
-    {
-      "name": "uuid",
-      "type": "UUID"
-    }
-```
-
+`99cefc9f-e39a-4cb5-a250-447977faa133`
+`5ae163f8-28be-45d5-9783-8c1f7c004bcc`
+`814f5aa7-9a8c-49ce-88ac-b4dc676849c8`

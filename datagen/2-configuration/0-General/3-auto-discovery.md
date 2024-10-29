@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Security Configuration
+title: Auto-Discovery
 parent: General Configuration
 grand_parent: Configuration
 has_children: false
@@ -40,5 +40,3 @@ Using configuration files, Datagen is able to extract required configurations to
 ## Kudu
 
 - **kudu.conf.path**=
-
-

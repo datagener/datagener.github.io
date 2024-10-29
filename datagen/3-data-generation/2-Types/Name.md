@@ -2,7 +2,7 @@
 layout: default
 title: Name
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -18,42 +18,10 @@ _Note: To make it more accurate, names are taken according to their occurences i
 
 ## Parameters
 
-
 Possible parameters for this type are:
 
-- **filters**: an array of countries to filter the names taken from.
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Filters**: To filter on or multiple countries
 
-
-## Examples
-
-A name:
-
-```json
-    {
-      "name": "name",
-      "type": "NAME"
-    }
-```
-
-A French name:
-
-```json
-    {
-      "name": "french_name",
-      "type": "NAME",
-      "filters": ["France"]
-    }
-```
-
-A UK or US name:
-```json
-    {
-      "name": "us_uk_name",
-      "type": "NAME",
-      "filters": ["USA", "UK"]
-    }
-```
 
 ## List of available countries
 

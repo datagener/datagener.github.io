@@ -2,7 +2,7 @@
 layout: default
 title: Link
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -18,23 +18,18 @@ For CSV, from any other fields defined in the CSV read.
 
 ## Parameters
 
-Possible parameters for this type are:
+There is on requrie parameter:
 
-- **conditionals**: with a link inside, it defined the link to which other field and what must be taken as a field of that other field.
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Link**: The link to get value from in format: `$city_or_csv_col_name.col_name_to_get_value_from`
 
 
-## Examples
+Example:
 
-```json
-    {
-      "name": "person_department",
-      "type": "LINK",
-      "conditionals": {
-        "link": "$person.department"
-      }
-    }
-```    
+  `$city_col.lat` will give the latitude of a city picked by another column named `city_col`.
 
-See these sections: City and CSV for concrete examples.
+  `$csv_col.a_nice_col` will give the value of the column `a_nice_col` from the CSV file referenced in column `csv_col`.
+
+For City, links are: `lat`, `long`, `country`.
+
+For CSV, links are other columns present in the CSV file.
 

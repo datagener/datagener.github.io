@@ -33,19 +33,19 @@ It is advises that you have your own git repository be either doing a fork direc
 
 Before pushing the new code to Cloudera Manager, you can run and test locally.
 
+It is mandatory when running locally to create file **application-test.properties** based on a copy of _application.properties_ with following command:
+```shell
+    cp src/main/resources/application.properties src/main/resources/application-test.properties
+```
+
+This new file can then be changed to configure some services (as it is ignored by git, it is safe to add credentials in it).
+
 You can either: 
 
-* Import the project to your favorite IDE and run it from their, (IntelliJ comes with a start command for spring boot java project)
-* Run it using command line with: `java -Dnashorn.args=--no-deprecation-warning --add-opens java.base/jdk.internal.ref=ALL-UNNAMED -jar target/DATAGEN*.jar` 
+* Import the project to your favorite IDE and run it from their (IntelliJ comes with a start command for spring boot java project).
+  However, it requires to add these settings in the Configuration of the command in your ide:
+  
+  _--spring.profiles.active=test_
+  _--spring.config.location=file:src/main/resources/application-test.properties_
 
-You can then access the Swagger UI on: https://localhost:4242/swagger-ui.html 
-
-<img src="images/install-from-build/local-swagger.png" width="500">
-
-All configurations are taken from _application.properties_ file under _src/main/resources/_.
-
-You can specify another properties file by adding this in your command line:
-
-`--spring.config.location=file:/tmp/myconfig-file.properties`
-
-
+* Run it using command line provided in the file under _src/main/resources/scripts/launch-locally.sh_

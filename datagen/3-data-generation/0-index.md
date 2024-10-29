@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Data Generation
+title: Usage
 has_children: true
 nav_order: 4
-permalink: /data-generation/
+permalink: /usage/
 ---
 

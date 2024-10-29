@@ -9,9 +9,9 @@ nav_order: 1
 # Installation using CSD & Parcel
 
 
-This tutorial requires a running **CDP 7.1.7+** platform with admin access to Cloudera Manager.
+This tutorial requires a running **CDP 7.1.9++** platform with admin access to Cloudera Manager.
 
-Note that this has been written for _CDP-7.1.9.3_ and _DATAGEN-0.5.0_, for future releases, please change the repository to point to the new release.
+Note that this has been written for _CDP-7.1.9.3_ and _DATAGEN-1.0.0_, for future releases, please change the repository to point to the new release.
 
 ## List of links for last release
 

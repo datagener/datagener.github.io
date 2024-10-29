@@ -11,20 +11,27 @@ permalink: /installation/local
 
 To run it locally, **Java 17** must be installed.
 
+If it is not installed, use corresponding command to your OS:
+
+```shell
+    yum install java-17-openjdk
+    apt get java-17-openjdk
+```
+
 
 ## Download the latest version of Datagen
 
 Go to the repository of Datagen mentionned in Introduction > Links and download the tar.gz file named _datagen-standalone-files.tar.gz_:
 
 ```shell
-wget https://datagen-repo.s3.eu-west-3.amazonaws.com/0.5.1/standalone/datagen-standalone-files.tar.gz 
+wget https://datagen-repo.s3.eu-west-3.amazonaws.com/1.0.0/standalone/datagen-standalone-files.tar.gz 
 ```
 
 then untar it:
 
 ```shell
 tar -xvzf datagen-standalone-files.tar.gz
-cd datagen_standalone-0.5.1/ 
+cd datagen_standalone-1.0.0/ 
 ```
 
 Finally, use the script _launch.sh_, to launch it:
@@ -33,7 +40,9 @@ Finally, use the script _launch.sh_, to launch it:
 ./launch.sh
 ```
 
-Now, datagen is accessible on [http://localhost:4242/](http://localhost:4242/) . 
+Now, datagen is accessible on: [https://localhost:4242/](https://localhost:4242/)
+
+Swagger is accessible on: [https://localhost:4242/swagger-ui.html](https://localhost:4242/swagger-ui.html)
 
 
 ## Configuration

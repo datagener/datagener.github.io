@@ -2,7 +2,7 @@
 layout: default
 title: CSV
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -24,40 +24,10 @@ Required parameters for this type are:
 Possible parameters for this type are:
 
 - **separator**: to specify field separator in the CSV (e.g: ,)
-- **filters**: on array of filters on the CSV to read in the form of _'field_to_filter_on=value_to_to_keep'_
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **filters**: filters on the CSV to only filter results based on equalities of colums from the CSV and value provided.
 
+## Use CSV's in other fields
 
-## Examples
+If a column is of type CSV, and its name is `my_csv`, one can use another column as LINK type and get:
 
-For example, we have this CSV in _/tmp/person_test.csv_ :
-
-```csv
-name;department;country
-francois;PS;France
-kamel;SE;France
-thomas;RH;Germany
-sebastian;PS;Spain
-```
-
-We can create two Fields:
-
-- One will be the name of the person (filtered on the country that should be France)
-- The department of this person
-
-```json
-{
-  "name": "person",
-  "type": "CSV",
-  "filters": ["country=France"],
-  "file": "/tmp/person_test.csv",
-  "field": "name"
-},
-{
-  "name": "person_department",
-  "type": "LINK",
-  "conditionals": {
-    "link": "$person.department"
-  }
-}
-```
+- Any other column of the CSV: `$my_csv.any_other_col`

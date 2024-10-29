@@ -2,7 +2,7 @@
 layout: default
 title: City
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -13,76 +13,25 @@ A city taken from a dictionnary of 40K+ cities over the world with associated la
 
 It can be filtered by country.
 
-The field city offers a link to its latitude, longitude and country, available to use by another field.
+The column city offers a link to its latitude, longitude and country, available to use by other columns.
 
 _Note: Cities occurences are weighted by their population, rendering more coherent results_
+
 
 
 ## Parameters
 
 Possible parameters for this type are:
 
-- **filters**: an array of countries to filter the cities taken from.
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Filters**: Set a filter to only select cities in one or multiple countries.
 
+## Use City's in other fields
 
-## Examples
+If a column is of tyoe city, and its name is `my_city`, one can use another column as LINK type and get:
 
-A random city across the world:
-
-```json
-{
-  "name": "city",
-  "type": "CITY"
-}
-```
-
-A city located in USA:
-
-```json
-{
-  "name": "city_in_usa",
-  "type": "CITY",
-  "filters": ["USA"]
-}
-```
-
-
-This below example creates 4 fields: 
-
-- City name (located in France or Spain)
-- Latitude of this city (available as lat)
-- Longitude of this city (available as long)
-- Country where this city is (available as country)
-
-```json
-{
-  "name": "city",
-  "type": "CITY",
-  "filters": ["France", "Spain"]
-},
-{
-  "name": "city_lat",
-  "type": "LINK",
-  "conditionals": {
-    "link": "$city.lat"
-  }
-},
-{
-  "name": "city_long",
-  "type": "LINK",
-  "conditionals": {
-    "link": "$city.long"
-  }
-},
-{
-  "name": "city_country",
-  "type": "LINK",
-  "conditionals": {
-    "link": "$city.country"
-  }
-}
-```
+- latitude of the city with: `$my_city.lat`
+- longitude of the city with: `$my_city.long`
+- Country of the city with: `$my_city.country`
 
 ## Countries Available
 

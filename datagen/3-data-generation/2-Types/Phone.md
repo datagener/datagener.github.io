@@ -2,7 +2,7 @@
 layout: default
 title: Phone
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
@@ -17,21 +17,7 @@ _Note: If something more accurate is required, refer to string regex instead_
 
 Possible parameters for this type are:
 
-- **filters**: an array of countries to filter the phone numbers are taken from.
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
-
-
-## Examples
-
-An Italian phone number:
-
-```json
-    {
-      "name": "phone_number",
-      "type": "PHONE",
-      "filters": ["Italy"]
-    }
-```
+- **Filters**: an array of countries to filter the phone numbers are taken from.
 
 ## Available Countries
 

@@ -1,22 +1,50 @@
 ---
 layout: default
 title: Basic
-parent: Data Generation
+parent: Usage
 has_children: true
 nav_order: 1
 ---
 
 # Prerequisites
 
-Datagen must up and running. 
+Datagen must up and running and available (on port 4242 by default).
+
+Default username/password is **admin/admin** . Unless it is plugged to a distant LDAP.
+
+UI is available by browing URL to port 4242 and should look like this:
+
+<img src="images/datagen_home.png" width="900">
+
+_Note: UI is very explicit and contains many explanations, but refer to that detailed documentation in case of doubt_
 
 
-# How to generate Data ? 
+# Main Menu
 
-To generate Data, a simple **API call** is required with a **file** explaining what kind of data can be generated, and **parameters** on how much data should be generated.
+Main menu is present on the left and allows user to navigate to different views. (These are detailed in next section)
 
-This file is what is called a **"model"**, Datagen come with pre-built models to show how to create them, but latter goal is to create your own ones.
+<img src="images/datagen_menu.png" width="200">
 
-API can be used and discovered easily thanks to swagger, swagger is exposed on: [http://datagen.hostname:4242/swagger-ui.html](http://datagen.hostname:4242/swagger-ui.html) .
 
-<img src="images/swagger-ui.png" width="700">
+# Logout
+
+It is possible to logout and see with which user it is authenticated by looking at bottom of left panel.
+
+<img src="images/datagen_user.png" width="200">
+
+Below, there is a Logout red button that will redirect to /login page being unauthenticated.
+
+_Role is also displayed in () alongside to the user, it is either: user or admin_
+
+
+# Links
+
+On left panel, at the bottom, there are 3 links:
+
+<img src="images/datagen_link.png" width="200">
+
+- To Swagger URL of this instance
+- To Official Documentation
+- To Github Repository of Datagen
+
+ 

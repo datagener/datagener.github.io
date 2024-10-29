@@ -2,35 +2,23 @@
 layout: default
 title: Email
 parent: Types
-grand_parent: Data Generation
+grand_parent: Usage
 has_children: false
 nav_order: 1
 ---
 
 # Email
 
-Returns a fake email using a dictionary of names that can be filtered on country and randomly . or numbers and an @ with a provider between: gaagle.com, yahaa.com, uutlook.com, email.fr.
+Returns a fake email using a dictionary of names that can be filtered on country and randomly . or numbers and an @ with a provider between: `gaagle.com`, `yahaa.com`, `uutlook.com`, `email.fr`.
 
 
 ## Parameters
 
 Possible parameters for this type are:
 
-- **possible_values**: an array of possible values
-- **filters**: an array to filter on country for names generated inside the email
-- **ghost**: To compute this field but does not output it. (This is useful foor generating more complex fields using one or multiple ghost fields)
+- **Filters**: Set a filter to only select cities in one or multiple countries.
+- **Possible Values**
 
-
-## Examples
-
-A random email:
-
-```json
-    {
-      "name": "userEmail",
-      "type": "EMAIL"
-    }
-```
 
 ## List of available countries
 

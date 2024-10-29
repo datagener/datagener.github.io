@@ -1,11 +1,14 @@
 ---
 layout: default
-title: AWS Configuration
+title: AWS Connectors
 parent: Configuration
 has_children: false
 nav_order: 3
 permalink: /configuration/aws
 ---
+
+_NOTE: Configuring these credentials is not required, as they can also be configured directly when creating a model or when generating data_
+
 
 # AWS Configuration
 
