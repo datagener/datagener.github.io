@@ -3,10 +3,12 @@ layout: default
 title: AWS
 parent: Installation
 nav_order: 4
-has_children: false
+has_children: true
 permalink: /installation/aws
 ---
 
-# COMING SOON
+# AWS Installation
 
-As of now, refer to local deployment, as it should work on any Cloud machine (with Java installed).
+Datagen can be deployed in multiple ways on AWS, as it is a simple Java program.
+
+Below are main and easiest way to deploy and run it on AWS.
