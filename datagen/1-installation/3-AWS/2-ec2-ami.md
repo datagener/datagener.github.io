@@ -36,7 +36,7 @@ Then ssh to it (using its public name and _ec2-user_) and follow these steps:
 ```shell
 sudo su - datagen
 cd datagen_standalone-1.0.0/
-/start.sh
+./start.sh
 ```
 
 

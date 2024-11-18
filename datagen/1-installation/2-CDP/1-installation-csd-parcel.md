@@ -19,14 +19,14 @@ To get the links corresponding to the Datagen Version you want and your CDP Vers
 
 [https://datagen-repo.s3.eu-west-3.amazonaws.com/index.html](https://datagen-repo.s3.eu-west-3.amazonaws.com/index.html) 
 
-__Note: Advise is to always go to latest Datagen Version (currenlty 0.5.0)__
+__Note: Advise is to always go to latest Datagen Version (currenlty 1.0.0)__
 
 ## Setup CSD
 
 Go to Cloudera Manager and make a wget of this:
 
 ```shell
-wget https://datagen-repo.s3.eu-west-3.amazonaws.com/0.5.0/7.1.9.3/csd/DATAGEN-0.5.0.7.1.9.3.jar
+wget https://datagen-repo.s3.eu-west-3.amazonaws.com/1.0.0/CDP/7.1.9/csd/DATAGEN-1.0.0.7.1.9.jar
 ```
 
 Make a copy of the downloaded jar file into /opt/cloudera/csd/:
@@ -52,7 +52,7 @@ Go to Cloudera Manager, in _Parcels > Parcel Repositories & Network_:
 <img src="images/install-csd-parcel/parcels_repositories_and_network_settings_button.png" width="700">
 
 
-Add this public repository to Cloudera Manager: [https://datagen-repo.s3.eu-west-3.amazonaws.com/0.5.0/7.1.9.3/parcels/](https://datagen-repo.s3.eu-west-3.amazonaws.com/0.5.0/7.1.9.3/parcels/)
+Add this public repository to Cloudera Manager: [https://datagen-repo.s3.eu-west-3.amazonaws.com/1.0.0/CDP/7.1.9/parcels/](https://datagen-repo.s3.eu-west-3.amazonaws.com/1.0.0/CDP/7.1.9/parcels/)
 
 
 Save & Verify to make sure URL is correct, you should have:
