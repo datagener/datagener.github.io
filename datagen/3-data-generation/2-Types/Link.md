@@ -13,6 +13,7 @@ A Link is a special field that is getting its value from other fields' linked fi
 
 Its current use is in City and CSV field.
 For City, LINK is getting a value from latitude, longitude or country of a city.
+For Name, LINK is getting a value from a name, and provide a true/false for male, female, unisex or the sex directly as MALE, FEMALE, UNKNOWN from sex.
 For CSV, from any other fields defined in the CSV read.
 
 
@@ -30,6 +31,8 @@ Example:
   `$csv_col.a_nice_col` will give the value of the column `a_nice_col` from the CSV file referenced in column `csv_col`.
 
 For City, links are: `lat`, `long`, `country`.
+
+For Name, links are: `sex`, `male`, `female`, `unisex`.
 
 For CSV, links are other columns present in the CSV file.
 

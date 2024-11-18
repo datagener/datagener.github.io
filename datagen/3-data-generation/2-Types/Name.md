@@ -22,6 +22,15 @@ Possible parameters for this type are:
 
 - **Filters**: To filter on or multiple countries
 
+## Use City's in other fields
+
+If a column is of type Name, and its name is `my_name`, one can use another column as LINK type and get:
+
+- sex associated to the name with (MALE/FEMALE/UNKNOWN): `$my_city.sex`
+- if sex associated to the name is considered as male with: `$my_city.male`
+- if sex associated to the name is considered as female with: `$my_city.female`
+- if sex associated to the name is considered as uni-sex with: `$my_city.unisex`
+
 
 ## List of available countries
 

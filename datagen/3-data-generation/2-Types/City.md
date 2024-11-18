@@ -27,7 +27,7 @@ Possible parameters for this type are:
 
 ## Use City's in other fields
 
-If a column is of tyoe city, and its name is `my_city`, one can use another column as LINK type and get:
+If a column is of type City, and its name is `my_city`, one can use another column as LINK type and get:
 
 - latitude of the city with: `$my_city.lat`
 - longitude of the city with: `$my_city.long`
