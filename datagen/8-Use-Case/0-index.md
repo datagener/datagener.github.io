@@ -6,3 +6,6 @@ has_children: true
 permalink: /usecase
 ---
 
+# Use Case
+
+This section presents multiple use acses where Datagen can help.

@@ -3,7 +3,6 @@ layout: default
 title: Format Comparison
 nav_order: 1
 has_children: false
-permalink: /usecase/format
 parent: Use Case
 ---
 
