@@ -7,7 +7,7 @@ has_children: true
 permalink: /installation/aws
 ---
 
-# AWS Installation
+# AWS (Amazon Web Services)
 
 Datagen can be deployed in multiple ways on AWS, as it is a simple Java program.
 
