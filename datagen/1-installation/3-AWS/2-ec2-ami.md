@@ -16,7 +16,7 @@ has_children: false
 
 In AWS > EC 2 > Launch Instance and choose these settings:
 
-- _AMI:_ ami-0292f0db07da061b6
+- _AMI:_ ami-0aa43892c0d0aa214
 - _Size:_ t2.micro
 - _Key Pair:_ Yours
 - _Security Group:_ Allowing ssh from your IP
